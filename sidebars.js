@@ -10,7 +10,7 @@ const sidebars = {
       label: 'tutorial-basic',
       items: [
         'tutorial-basic/Redis',
-        'tutorial-basic/In Memory-a-blog-post',
+        'tutorial-basic/In Memory',
       ],
     }
   ],
