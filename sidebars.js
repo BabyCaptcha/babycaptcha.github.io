@@ -7,10 +7,10 @@ const sidebars = {
     "text-base captcha configuration",
     {
       type: 'category',
-      label: 'tutorial-basic',
+      label: 'Cache Configuration',
       items: [
-        'tutorial-basic/Redis',
-        'tutorial-basic/In Memory',
+        'Cache Configuration/Redis',
+        'Cache Configuration/In Memory',
       ],
     }
   ],
