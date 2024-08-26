@@ -5,6 +5,14 @@ const sidebars = {
     'installation',
     'getting-started',
     "text-base captcha configuration",
+    {
+      type: 'category',
+      label: 'tutorial-basics',
+      items: [
+        'tutorial-basics/congratulations',
+        'tutorial-basics/create-a-blog-post',
+      ],
+    }
   ],
 };
 
