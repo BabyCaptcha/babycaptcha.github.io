@@ -4,6 +4,7 @@ const sidebars = {
     'intro', // Make sure the id matches the markdown file name without the extension
     'installation',
     'getting-started',
+    "text-base captcha configuration",
   ],
 };
 
