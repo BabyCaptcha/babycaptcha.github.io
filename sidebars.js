@@ -12,7 +12,16 @@ const sidebars = {
         'Cache Configuration/Redis',
         'Cache Configuration/In Memory',
       ],
+    },
+    {
+      type: 'category',
+      label: 'State Configuration',
+      items: [
+        'State Configuration/Client Side',
+        'State Configuration/Server Side',
+      ],
     }
+
   ],
 };
 
