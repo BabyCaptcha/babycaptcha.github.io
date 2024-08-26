@@ -6,7 +6,7 @@ const sidebars = {
     'getting-started',
     "text-base captcha configuration",
     {
-      type: 'generated-index',
+      type: 'category',
       label: 'tutorial-basic',
       items: [
         'tutorial-basic/Redis',
