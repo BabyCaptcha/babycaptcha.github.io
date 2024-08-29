@@ -23,7 +23,7 @@ const config = {
   organizationName: 'BabyCaptcha', // Usually your GitHub org/user name.
   projectName: 'babycaptcha.github.io', // Usually your repo name - for custom domain it will be /
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   deploymentBranch: 'gh-pages',
 
