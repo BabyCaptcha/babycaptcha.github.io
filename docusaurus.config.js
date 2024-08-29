@@ -8,9 +8,9 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'This it Baby Cap!',
-  tagline: '!!!!Deployed On Pages and And Workflow is Done!!!!',
-  favicon: 'img/favicon.ico',
+  title: 'BabyCaptcha',
+  tagline: '',
+  favicon: 'img/baby_logo_.png',
 
   // Set the production url of your site here
   url: 'https://babycaptcha.com',
