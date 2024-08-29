@@ -73,7 +73,7 @@ const config = {
         title: 'Baby Captcha',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg', //logo address for captcha
+          src: 'img/baby_logo_.png', //logo address for captcha
         },
         items: [
           {

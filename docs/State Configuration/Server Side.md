@@ -4,52 +4,22 @@ sidebar_position: 1
 
 # Server Side
 
-Docusaurus can manage multiple versions of your docs.
+## Description
 
-## Create a docs version
+As mentioned, when the CAPTCHA creation service is called, the system generates and stores a state after creating the CAPTCHA. You can change the storage location of the state to server-side storage. In this case, the state is no longer stored in the client-side cookie. Instead, the cookie will not contain the state, and the state will be maintained on the server side. You can enable and customize this as shown below. Please note that you cannot have both state storage methods enabled simultaneously.
 
-Release a version 1.0 of your project:
+## Configuration
 
-```bash
-npm run docusaurus docs:version 1.0
+```csharp
+
+builder.Services.AddBabyCaptcha(babyOption =>
+{
+
+    babyOption.StateConfiguration.UseServerSideState(option =>
+    {
+        option.Key = "cookie_key";
+        option.Expires = TimeSpan.FromMinutes(10);
+
+    });
+});
 ```
-
-The `docs` folder is copied into `versioned_docs/version-1.0` and `versions.json` is created.
-
-Your docs now have 2 versions:
-
-- `1.0` at `http://localhost:3000/docs/` for the version 1.0 docs
-- `current` at `http://localhost:3000/docs/next/` for the **upcoming, unreleased docs**
-
-## Add a Version Dropdown
-
-To navigate seamlessly across versions, add a version dropdown.
-
-Modify the `docusaurus.config.js` file:
-
-```js title="docusaurus.config.js"
-export default {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: 'docsVersionDropdown',
-        },
-        // highlight-end
-      ],
-    },
-  },
-};
-```
-
-The docs version dropdown appears in your navbar:
-
-![Docs Version Dropdown](./img/docsVersionDropdown.png)
-
-## Update an existing version
-
-It is possible to edit versioned docs in their respective folder:
-
-- `versioned_docs/version-1.0/hello.md` updates `http://localhost:3000/docs/hello`
-- `docs/hello.md` updates `http://localhost:3000/docs/next/hello`
